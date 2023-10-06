@@ -87,15 +87,15 @@ passport.deserializeUser(async (id, done) => {
 // Middleware
 app.use(express.json()); 
 
-app.use(
-  session({
-    secret: 'worked',
-    resave: false,
-    saveUninitialized: false,
-  })
-);
+// app.use(
+//   session({
+//     secret: 'worked',
+//     resave: false,
+//     saveUninitialized: false,
+//   })
+//);
 app.use(passport.initialize());
-app.use(passport.session());
+//app.use(passport.session());
 
 
 
